@@ -67,26 +67,6 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 
 
-/* Background Styles */
-
-.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
-	-webkit-background-size: auto!important;
-	-moz-background-size: auto!important;
-	-o-background-size: auto!important;
-	background-size: auto!important;
-}
-.bg-center{
-	-webkit-background-size: auto;
-}
-
-
-/* Background Effects */
-
-.b-parallax{
-	background-attachment:fixed;
-}
-
-
 /* Dark theme */
 
 .d-bloc{
@@ -367,17 +347,28 @@ iframe{
 
 /* Background colour styles */
 
+.bgc-charcoal{
+	background-color:#2E3A48;
+}
+.bgc-white-smoke{
+	background-color:#F4F6F6;
+}
 .bgc-white{
 	background-color:#ffffff;
+}
+/* Link colour styles */
+
+.ltc-white{
+	color:#ffffff!important;
+}
+.ltc-white:hover{
+	color:#ffffff!important;
 }
 
 /* Bloc image backgrounds */
 
 .bg-dots-bg{
 	background-image:url('img/dots-bg.png');
-}
-.bg-field{
-	background-image:url('img/field.jpg');
 }
 
 
