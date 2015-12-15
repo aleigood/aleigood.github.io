@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------*/
-/*	    (null)
+/*	    My Site
 /*      Built with Blocs
 /*-----------------------------------------------------------------------------------*/
 
@@ -19,11 +19,8 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
    
 
 
-
-
 /* Globals type styling */
-   
- h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
 	font-family:"Helvetica";
 }
 
@@ -56,14 +53,50 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Sizes */
 
-.bloc-xxl{
-	padding:200px 50px;
+.bloc-xl{
+	padding:150px 50px;
 }
 .bloc-lg{
 	padding:100px 50px;
 }
+.bloc-md{
+	padding:50px;
+}
 .bloc-sm{
 	padding:20px 50px;
+}
+
+
+/* Group Styles */
+
+.bloc-group{
+	width:100%;
+	display:table;
+	table-layout: fixed;
+}
+.bloc-group .bloc{
+	position:relative;
+	display: table-cell;
+	vertical-align: top;
+}
+.bloc-tile-2{
+	width:50%;
+}
+.bloc-tile-3{
+	width:33.33333333%;
+}
+.bloc-tile-4{
+	width:25%;
+}
+.bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+	width:100%;
+}
+
+
+/* Background Effects */
+
+.b-parallax{
+	background-attachment:fixed;
 }
 
 
@@ -153,6 +186,12 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 .l-bloc .btn-wire, .l-bloc .btn-wire:hover{
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
+}
+
+/* Row Margin Offsets */
+
+.voffset{
+	margin-top:30px;
 }
 
 /* Bloc text custom styling */
@@ -323,19 +362,6 @@ button{
 
 
 
-/* Empty space fillers - Used on empty blocs to fill them out */
-
-.empty-column,.empty-column.thin{
-	width:100%;
-	height:350px;
-	display:inline-block;
-}
-.empty-column{
-	height:350px;
-}
-.empty-column.thin{
-	height:150px;
-}
 /* iFrame */
 
 iframe{
@@ -347,28 +373,40 @@ iframe{
 
 /* Background colour styles */
 
-.bgc-charcoal{
-	background-color:#2E3A48;
-}
 .bgc-white-smoke{
 	background-color:#F4F6F6;
 }
 .bgc-white{
 	background-color:#ffffff;
 }
+.bgc-charcoal{
+	background-color:#39485A;
+}
 /* Link colour styles */
 
-.ltc-white{
-	color:#ffffff!important;
+.ltc-charcoal{
+	color:#39485A!important;
 }
-.ltc-white:hover{
-	color:#ffffff!important;
+.ltc-charcoal:hover{
+	color:#2e3a48!important;
+}
+/* Icon colour styles */
+
+.icon-charcoal{
+	color:#39485A!important;
+	border-color:#39485A!important;
 }
 
 /* Bloc image backgrounds */
 
 .bg-dots-bg{
-	background-image:url('img/dots-bg.png');
+	background-image:url("img/dots-bg.png");
+}
+.bg-Fotolia-67844411-L{
+	background-image:url('img/Fotolia_67844411_L.jpg');
+}
+.bg-Fotolia-67844411-L{
+	background-image:url('img/Fotolia_67844411_L.jpg');
 }
 
 
