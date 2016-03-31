@@ -1,7 +1,7 @@
-/*-----------------------------------------------------------------------------------*/
-/*	    My Site
-/*      Built with Blocs
-/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------
+        teachrec
+        Built with Blocs
+-----------------------------------------------------------------------------------*/
 
 body{
 	margin:0;
@@ -28,7 +28,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 /* Site container width */
 
 .container{
-	max-width:750px;
+	max-width:1170px;
 }
 
 /* = Blocs
@@ -53,107 +53,11 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Sizes */
 
-.bloc-xl{
-	padding:150px 50px;
-}
 .bloc-lg{
 	padding:100px 50px;
 }
-.bloc-md{
-	padding:50px;
-}
 .bloc-sm{
 	padding:20px 50px;
-}
-
-
-/* Group Styles */
-
-.bloc-group{
-	width:100%;
-	display:table;
-	table-layout: fixed;
-}
-.bloc-group .bloc{
-	position:relative;
-	display: table-cell;
-	vertical-align: top;
-}
-.bloc-tile-2{
-	width:50%;
-}
-.bloc-tile-3{
-	width:33.33333333%;
-}
-.bloc-tile-4{
-	width:25%;
-}
-.bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
-	width:100%;
-}
-
-
-/* Background Effects */
-
-.b-parallax{
-	background-attachment:fixed;
-}
-
-
-/* Dark theme */
-
-.d-bloc{
-	color:rgba(255,255,255,.7);
-}
-.d-bloc button:hover{
-	color:rgba(255,255,255,.9);
-}
-.d-bloc h1, .d-bloc h2, .d-bloc h3, .d-bloc h4,.d-bloc h5, .d-bloc h6, .d-bloc .ico{
-	color:rgba(255,255,255,.9);
-}
-.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
-	border-color:rgba(255,255,255,.9);
-}
-.d-bloc .divider-h span{
-	border-color:rgba(255,255,255,.2);
-}
-.d-bloc a{
-	color:rgba(255,255,255,.6);
-}
-.d-bloc a:hover{
-	color:rgba(255,255,255,1);
-}
-.d-bloc .navbar-toggle .icon-bar{
-	background:rgba(255,255,255,1);
-}
-.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
-	color:rgba(255,255,255,1);
-	border-color:rgba(255,255,255,1);
-}
-.d-bloc .panel{
-	color:rgba(0,0,0,.5);
-}
-.d-bloc .panel button:hover{
-	color:rgba(0,0,0,.7);
-}
-.d-bloc .panel h1,.d-bloc .panel h2, .d-bloc .panel h3, .d-bloc .panel h4, .d-bloc .panel h5, .d-bloc .panel h6, .d-bloc .ico{
-	color:rgba(0,0,0,.7);
-}
-.d-bloc .panel icon{
-	border-color:rgba(0,0,0,.7);
-}
-.d-bloc .panel .divider-h span{
-	border-color:rgba(0,0,0,.1);
-}
-.d-bloc .panel a{
-	color:rgba(0,0,0,.6);
-}
-.d-bloc .panel a:hover{
-	color:rgba(0,0,0,1);
-}
-.d-bloc .panel .btn-wire, .d-bloc .panel .btn-wire:hover{
-	color:rgba(0,0,0,.7);
-	border-color:rgba(0,0,0,.3);
 }
 
 
@@ -320,29 +224,12 @@ button{
 	outline: none!important;
 }
 
+.btn-xl{
+	padding: 16px 40px;
+	font-size: 28px;
+}
 .dropdown a .caret{
 	margin:0 0 0 5px}
-/* = Icons
--------------------------------------------------------------- */
-.icon-md{
-	font-size:30px!important;
-}
-.icon-round{
-	margin:0 auto;
-	border:2px solid transparent;
-	border-radius: 50%;
-	padding: 32px 30px 26px 30px;
-	min-width:80px;
-}
-.icon-round,.icon-md,.icon-square.icon-md,.icon-rounded.icon-md{
-	min-width: 92px;
-}
-.icon-round.icon-lg,.icon-square.icon-lg,.icon-rounded.icon-lg{
-	min-width: 122px;
-}
-.icon-round.icon-xl,.icon-square.icon-xl,.icon-rounded.icon-xl{
-	min-width: 162px;
-}
 
 
 
@@ -360,7 +247,30 @@ button{
 	border-radius:0 0 29px 29px;
 }
 
+/* = Dividers
+-------------------------------------------------------------- */
+.divider-h{
+	padding:20px 0;
+}
+.divider-h span{
+	display: block;
+	border-top:1px solid transparent;
+}
+.divider-half{
+	width: 50%;
+	margin: 0 auto;
+}
+.dropdown-menu .divider-h,.dropdown-menu .divider-half{
+	padding:0;
+}
 
+/* = Forms
+-------------------------------------------------------------- */
+
+.form-control{
+	border-color:rgba(0,0,0,.1);
+	box-shadow:none;
+}
 
 /* iFrame */
 
@@ -373,41 +283,28 @@ iframe{
 
 /* Background colour styles */
 
-.bgc-white-smoke{
-	background-color:#F4F6F6;
-}
 .bgc-white{
 	background-color:#ffffff;
 }
-.bgc-charcoal{
-	background-color:#39485A;
-}
-/* Link colour styles */
+/* Button colour styles */
 
-.ltc-charcoal{
-	color:#39485A!important;
+.btn-charcoal{
+	background:#384859;
+	color:#FFFFFF!important;
 }
-.ltc-charcoal:hover{
-	color:#2e3a48!important;
+.btn-charcoal:hover{
+	background:#2d3a47;
+	color:#FFFFFF!important;
 }
-/* Icon colour styles */
+.btn-dark-terra-cotta{
+	background:#DF4859;
+	color:#FFFFFF!important;
+}
+.btn-dark-terra-cotta:hover{
+	background:#b23a47;
+	color:#FFFFFF!important;
+}
 
-.icon-charcoal{
-	color:#39485A!important;
-	border-color:#39485A!important;
-}
-
-/* Bloc image backgrounds */
-
-.bg-dots-bg{
-	background-image:url("img/dots-bg.png");
-}
-.bg-Fotolia-67844411-L{
-	background-image:url('img/Fotolia_67844411_L.jpg');
-}
-.bg-Fotolia-67844411-L{
-	background-image:url('img/Fotolia_67844411_L.jpg');
-}
 
 
 
